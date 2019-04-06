@@ -9,10 +9,10 @@ makeCacheMatrix <- function(x = matrix()) {
     m<<-NULL 
   }
   
-  getmatrix<-function() x 
-  setinverse<-function(solve) m<<- solve  
-  getinverse<-function() m  
-  getenv<- function() environment()
+  getmatrix<-function() x #function to get the matrix
+  setinverse<-function(solve) m<<- solve  #function to find the inverse
+  getinverse<-function() m  #finction to display the inverse
+  getenv<- function() environment() #to display the result
   
   list (setmatrix=setmatrix, getmatrix = getmatrix, 
         setinverse = setinverse,
